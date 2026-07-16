@@ -218,7 +218,16 @@ const Footer = () => {
           <div className="border-t border-white/10 px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-400 text-center md:text-left">
               © {new Date().getFullYear()} SAHA SILVER WORKS. All Rights
-              Reserved.
+              Reserved.{" "}
+              <a
+                href="https://www.teamdeoskolkata.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-yellow-400  transition-colors duration-300 ml-1"
+              >
+                Digital Exposure Online Service
+              </a>
+              .
             </p>
 
             <p className="text-sm text-yellow-400 text-center">
