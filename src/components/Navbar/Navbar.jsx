@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { assets } from "../../assets/assets";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,15 +43,26 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <Link to="/" className="flex items-center">
-              <h1
-                className={`text-2xl lg:text-3xl font-bold transition ${
-                  scrolled ? "text-white" : "text-white"
-                }`}
-              >
-                SAHA <span className="text-yellow-500">SILVER WORKS</span>
-              </h1>
+            {/* Premium Logo */}
+
+            <Link
+              to="/"
+              className="group flex items-center gap-3 transition-all duration-500"
+            >
+              {/* Logo */}
+
+              <img
+                src={assets.web_logo}
+                alt="SAHA SILVER WORKS"
+                className={`
+      object-contain
+      transition-all
+      duration-500
+      drop-shadow-[0_0_15px_rgba(255,255,255,.18)]
+      group-hover:scale-110
+      ${scrolled ? "h-10 w-10 lg:h-12 lg:w-12" : "h-14 w-14 lg:h-16 lg:w-16 ml-10"}
+    `}
+              />
             </Link>
 
             {/* Desktop Menu */}
@@ -75,7 +87,7 @@ const Navbar = () => {
 
               <Link
                 to="/contact"
-                className="rounded-full bg-yellow-500 px-6 py-3 font-semibold text-black transition-all duration-300 hover:bg-yellow-400 hover:scale-105 hover:shadow-lg"
+                className="rounded-full bg-yellow-500 px-6 py-2 font-semibold text-black transition-all duration-300 hover:bg-yellow-400 hover:scale-105 hover:shadow-lg"
               >
                 Contact Us
               </Link>

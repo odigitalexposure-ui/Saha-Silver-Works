@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 const AboutHero = () => {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
+    <section className="relative flex min-h-screen items-start justify-center overflow-hidden px-6 pt-32 pb-12 sm:pt-36 md:pt-32 lg:items-center lg:pt-24">
       {/* Decorative Glow */}
       <div className="absolute left-0 top-32 h-72 w-72 rounded-full bg-yellow-500/10 blur-3xl"></div>
       <div className="absolute bottom-20 right-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
@@ -81,7 +81,7 @@ const AboutHero = () => {
           initial={{ opacity: 0, y: 70 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 1 }}
-          className="mt-20 grid grid-cols-2 gap-6 md:grid-cols-4"
+          className="mt-16 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4"
         >
           {[
             { value: "100%", label: "Authentic Silver" },
@@ -107,9 +107,9 @@ const AboutHero = () => {
 
       {/* Scroll Indicator */}
       <motion.div
-        animate={{ y: [0, 12, 0] }}
+        animate={{ y: [5, 12, 0] }}
         transition={{ repeat: Infinity, duration: 1.8 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+        className="absolute  bottom-3 left-1/2 -translate-x-1/2"
       >
         <div className="flex h-14 w-8 justify-center rounded-full border border-white/30">
           <div className="mt-2 h-3 w-3 rounded-full bg-yellow-400"></div>

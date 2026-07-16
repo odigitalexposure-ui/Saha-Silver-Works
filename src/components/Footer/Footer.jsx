@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import { assets } from "../../assets/assets";
 
 import {
   FaFacebookF,
@@ -36,10 +37,30 @@ const Footer = () => {
             {/* ================= Brand ================= */}
 
             <div>
-              <h2 className="text-3xl font-bold text-white">
+              {/* <h2 className="text-3xl font-bold text-white">
                 SAHA
                 <span className="text-yellow-400"> SILVER WORKS</span>
-              </h2>
+              </h2> */}
+
+              <Link
+                to="/"
+                className="group flex items-center gap-3 transition-all duration-500"
+              >
+                {/* Logo */}
+
+                <img
+                  src={assets.web_logo}
+                  alt="SAHA SILVER WORKS"
+                  className={`
+      object-contain
+      transition-all
+      duration-500
+      drop-shadow-[0_0_15px_rgba(255,255,255,.18)]
+      group-hover:scale-110
+       "h-14 w-14 lg:h-16 lg:w-16 ml-10"}
+    `}
+                />
+              </Link>
 
               <p className="mt-2 text-yellow-300 font-medium">
                 Proprietor: Sukanta Saha
@@ -78,8 +99,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
-            {/* ================= Navigation ================= */}
 
             {/* ================= Navigation ================= */}
 
