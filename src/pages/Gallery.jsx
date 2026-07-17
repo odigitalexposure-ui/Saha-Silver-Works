@@ -62,7 +62,7 @@ const Gallery = () => {
       <div
         className="fixed inset-0 -z-20 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${assets.website_bg})`,
+          backgroundImage: `url(${assets.web_bg})`,
         }}
       />
 

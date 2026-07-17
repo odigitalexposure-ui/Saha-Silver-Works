@@ -1,19 +1,19 @@
 const AboutPreview = () => {
   return (
     <section className="relative py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 italic">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 backdrop-blur-xl px-5 py-2 text-sm uppercase tracking-[0.25em] text-yellow-300">
+        <div className="text-center max-w-3xl mx-auto ">
+          <span className="inline-flex items-center rounded-full border border-amber-300/50 bg-black-700/10 backdrop-blur-xl px-5 py-2 text-lg uppercase tracking-[0.25em] text-amber-400/90 font-semibold">
             Our Heritage
           </span>
 
           <h2 className="mt-6 text-4xl md:text-5xl font-bold text-white">
             Crafting Silver with
-            <span className="text-yellow-400"> Passion & Precision</span>
+            <span className="text-amber-400/90"> Passion & Precision</span>
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-gray-200">
+          <p className="mt-6 text-lg leading-8 text-gray-100">
             At SAHA SILVER WORKS, every creation is inspired by timeless
             craftsmanship and refined elegance. Our passion lies in transforming
             premium silver into beautifully designed pieces that reflect
@@ -24,8 +24,8 @@ const AboutPreview = () => {
         {/* Content */}
         <div className="mt-20 grid lg:grid-cols-2 gap-14 items-center">
           {/* Left Side */}
-          <div className="rounded-[35px] border border-white/20 bg-white/10 backdrop-blur-2xl p-10 shadow-[0_25px_70px_rgba(0,0,0,0.35)]">
-            <h3 className="text-3xl font-semibold text-white">
+          <div className="rounded-[35px] border border-amber-300/50 bg-black-700/10 backdrop-blur-2xl p-10 shadow-[0_25px_70px_rgba(0,0,0,0.35)]">
+            <h3 className="text-3xl font-semibold text-amber-400/90">
               Excellence in Every Detail
             </h3>
 
@@ -38,13 +38,13 @@ const AboutPreview = () => {
 
             <div className="mt-10 grid grid-cols-2 gap-5">
               <div className="rounded-2xl bg-white/10 p-6">
-                <h4 className="text-4xl font-bold text-yellow-400">99.9%</h4>
+                <h4 className="text-4xl font-bold text-amber-400/90">99.9%</h4>
 
                 <p className="mt-2 text-gray-300">Premium Silver Purity</p>
               </div>
 
               <div className="rounded-2xl bg-white/10 p-6">
-                <h4 className="text-4xl font-bold text-yellow-400">100%</h4>
+                <h4 className="text-4xl font-bold text-amber-400/90">100%</h4>
 
                 <p className="mt-2 text-gray-300">Quality Focused</p>
               </div>
@@ -54,8 +54,8 @@ const AboutPreview = () => {
           {/* Right Side */}
 
           <div className="grid gap-6">
-            <div className="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-xl p-8 transition duration-500 hover:bg-white/15">
-              <h4 className="text-2xl font-semibold text-white">
+            <div className="rounded-3xl border border-amber-300/50 bg-black-700/10 backdrop-blur-xl p-8 transition duration-500 hover:bg-white/15">
+              <h4 className="text-2xl font-semibold text-amber-400/90">
                 Timeless Craftsmanship
               </h4>
 
@@ -65,8 +65,12 @@ const AboutPreview = () => {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-xl p-8 transition duration-500 hover:bg-white/15">
-              <h4 className="text-2xl font-semibold text-white">
+            <div
+              className="rounded-3xl border
+            border-amber-300/50 bg-black-700/10 
+            backdrop-blur-xl p-8 transition duration-500 hover:bg-white/15"
+            >
+              <h4 className="text-2xl font-semibold text-amber-400/90">
                 Elegant Designs
               </h4>
 
@@ -76,8 +80,12 @@ const AboutPreview = () => {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-xl p-8 transition duration-500 hover:bg-white/15">
-              <h4 className="text-2xl font-semibold text-white">
+            <div
+              className="rounded-3xl border
+            border-amber-300/50 bg-black-700/10
+             backdrop-blur-xl p-8 transition duration-500 hover:bg-white/15"
+            >
+              <h4 className="text-2xl font-semibold text-amber-400/90">
                 Trusted Quality
               </h4>
 

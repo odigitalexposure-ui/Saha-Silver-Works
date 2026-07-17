@@ -11,7 +11,7 @@ const About = () => {
       <div
         className="fixed inset-0 -z-20 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${assets.website_bg})`,
+          backgroundImage: `url(${assets.web_bg})`,
         }}
       />
 
@@ -21,7 +21,7 @@ const About = () => {
 
       {/* Page Content */}
 
-      <div className="relative z-10">
+      <div className="relative z-10 italic">
         <AboutHero />
         <CraftProcess />
         <ContactCTA />

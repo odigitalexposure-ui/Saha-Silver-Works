@@ -35,9 +35,9 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        className={`fixed italic top-0 left-0 w-full z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-transparent backdrop-blur-xl shadow-xl py-3"
+            ? "border border-b-amber-300/50 bg-amber-800/10 backdrop-blur-xl shadow-xl py-3"
             : "bg-transparent py-5"
         }`}
       >

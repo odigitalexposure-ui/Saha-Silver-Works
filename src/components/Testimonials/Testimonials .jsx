@@ -4,7 +4,7 @@ import { testimonials } from "./testimonialData";
 
 const Testimonials = () => {
   return (
-    <section className="relative py-28 overflow-hidden">
+    <section className="relative py-28 overflow-hidden italic">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
 
@@ -15,16 +15,16 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <span className="uppercase tracking-[0.35em] text-yellow-400 font-medium">
+          <span className="uppercase tracking-[0.35em] text-yellow-400 font-medium text-lg">
             Testimonials
           </span>
 
           <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-bold text-white">
             Trusted By
-            <span className="text-yellow-400"> Our Customers</span>
+            <span className="text-amber-400/90"> Our Customers</span>
           </h2>
 
-          <p className="mt-6 max-w-3xl mx-auto text-gray-300 leading-8">
+          <p className="mt-6 max-w-3xl mx-auto text-gray-100 leading-8">
             Every creation at SAHA SILVER WORKS is crafted with dedication,
             precision and elegance. Here's what our valued customers say.
           </p>
@@ -48,8 +48,7 @@ const Testimonials = () => {
                 scale: 1.03,
               }}
               className="relative overflow-hidden rounded-[35px]
-              border border-white/20
-              bg-white/10
+              border border-amber-300/50 bg-black-700/10
               backdrop-blur-2xl
               p-8
               shadow-[0_25px_70px_rgba(0,0,0,0.35)]"
@@ -86,7 +85,7 @@ const Testimonials = () => {
                   {item.name}
                 </h3>
 
-                <p className="text-gray-400">{item.location}</p>
+                <p className="text-amber-400/90">{item.location}</p>
               </div>
             </motion.div>
           ))}

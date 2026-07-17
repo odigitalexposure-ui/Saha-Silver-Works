@@ -12,12 +12,12 @@ const Home = () => {
       <div
         className="fixed inset-0 -z-20 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${assets.website_bg})`,
+          backgroundImage: `url(${assets.web_bg})`,
         }}
       />
 
       {/* Overlay */}
-      <div className="fixed inset-0 -z-10 bg-gradient-to-br from-black/70 via-black/40 to-black/70" />
+      <div className="fixed inset-0 -z-10 bg-gradient-to-tr from-black/10 via-black/70 to-black/90" />
 
       {/* Scrolling Content */}
       <div className="relative z-10">

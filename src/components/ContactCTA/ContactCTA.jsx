@@ -12,8 +12,7 @@ const ContactCTA = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
           className="relative overflow-hidden rounded-[40px]
-          border border-white/20
-          bg-white/10
+          border border-amber-300/50 bg-black-700/10
           backdrop-blur-2xl
           shadow-[0_30px_80px_rgba(0,0,0,0.35)]"
         >
@@ -21,20 +20,20 @@ const ContactCTA = () => {
           <div className="absolute -top-32 -right-24 h-72 w-72 rounded-full bg-yellow-500/20 blur-3xl"></div>
           <div className="absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
 
-          <div className="relative z-10 px-8 py-16 md:px-16 lg:px-20 text-center">
-            <span className="uppercase tracking-[0.35em] text-yellow-400 font-medium">
+          <div className="relative z-10 px-8 py-16 md:px-16 lg:px-20 text-center italic">
+            <span className="uppercase tracking-[0.35em] text-amber-400/90 font-medium">
               Let's Create Something Beautiful
             </span>
 
             <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Discover the Beauty of
-              <span className="text-yellow-400">
+              <span className="text-amber-400/90">
                 {" "}
                 Premium Silver Craftsmanship
               </span>
             </h2>
 
-            <p className="mt-8 max-w-3xl mx-auto text-gray-300 text-lg leading-8">
+            <p className="mt-8 max-w-3xl mx-auto text-gray-100 text-lg leading-8">
               Whether you're looking for elegant silver jewellery, custom
               creations, or timeless designs, our team is ready to help you find
               the perfect piece.
@@ -44,8 +43,8 @@ const ContactCTA = () => {
               <Link
                 to="/contact"
                 className="group flex items-center gap-3 rounded-full
-                bg-yellow-500 px-8 py-4 font-semibold text-black
-                transition-all duration-300 hover:scale-105 hover:bg-yellow-400"
+                bg-amber-400/90 px-8 py-4 font-semibold text-black
+                transition-all duration-300 hover:scale-105 hover:bg-amber-400"
               >
                 Contact Us
                 <ArrowRight

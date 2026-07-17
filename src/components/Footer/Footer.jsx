@@ -20,9 +20,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative pt-24 pb-8 overflow-hidden">
+    <footer className="relative pt-24 pb-8 overflow-hidden italic ">
       {/* Background Glow */}
-      <div className="absolute -top-20 left-10 h-72 w-72 rounded-full bg-yellow-500/10 blur-3xl" />
+      <div className="absolute -top-20 left-10 h-72 w-72 rounded-full border border-amber-300/50 bg-black-700/10 blur-3xl" />
       <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
 
       <motion.div
@@ -32,7 +32,7 @@ const Footer = () => {
         viewport={{ once: true }}
         className="max-w-7xl mx-auto px-6"
       >
-        <div className="rounded-[35px] border border-white/20 bg-white/10 backdrop-blur-2xl shadow-[0_20px_80px_rgba(0,0,0,0.35)] overflow-hidden">
+        <div className="rounded-[35px]  border border-amber-300/50 bg-black-700/10 backdrop-blur-2xl shadow-[0_20px_80px_rgba(0,0,0,0.35)] overflow-hidden">
           <div className="grid gap-12 lg:grid-cols-4 p-10 lg:p-14">
             {/* ================= Brand ================= */}
 
