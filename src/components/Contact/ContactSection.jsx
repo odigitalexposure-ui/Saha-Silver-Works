@@ -34,8 +34,6 @@ const ContactSection = () => {
         <div className="grid gap-10 lg:grid-cols-2">
           {/* ================= LEFT ================= */}
 
-          {/* ================= LEFT ================= */}
-
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -49,7 +47,7 @@ const ContactSection = () => {
             <div className="absolute -right-20 -bottom-20 h-56 w-56 rounded-full bg-white/10 blur-[120px]" />
 
             {/* Card Container */}
-            <div className="relative flex w-full items-center justify-center rounded-3xl bg-white/5 p-4 backdrop-blur-md">
+            {/* <div className="relative flex w-full items-center justify-center rounded-3xl bg-white/5 p-4 backdrop-blur-md">
               <img
                 src={assets.visiting_card_img}
                 alt="SAHA SILVER WORKS Visiting Card"
@@ -70,6 +68,41 @@ const ContactSection = () => {
         drop-shadow-[0_20px_35px_rgba(0,0,0,0.45)]
       "
               />
+            </div> */}
+            <div className="grid gap-8 w-full">
+              {/* Visiting Card 1 */}
+              <div className="rounded-3xl bg-black/20 p-3 border border-white/10">
+                <img
+                  src={assets.visiting_card_img}
+                  alt="SAHA SILVER WORKS Visiting Card"
+                  className="
+        w-full
+        rounded-2xl
+        object-contain
+        transition-all
+        duration-700
+        hover:scale-105
+        drop-shadow-[0_20px_35px_rgba(0,0,0,0.45)]
+      "
+                />
+              </div>
+
+              {/* Visiting Card 2 */}
+              <div className="rounded-3xl bg-black/20 p-3 border border-white/10">
+                <img
+                  src={assets.saha_visiting_card}
+                  alt="New Balaji James & Jewellers Visiting Card"
+                  className="
+        w-full
+        rounded-2xl
+        object-contain
+        transition-all
+        duration-700
+        hover:scale-105
+        drop-shadow-[0_20px_35px_rgba(0,0,0,0.45)]
+      "
+                />
+              </div>
             </div>
           </motion.div>
 
@@ -108,7 +141,7 @@ const ContactSection = () => {
                   </h3>
 
                   <p className="mt-4 leading-8 text-gray-300">
-                    3 Smriti Bhusan Lane
+                    3 No, Smriti Bhusan Lane
                     <br />
                     Garanhata
                     <br />

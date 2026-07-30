@@ -7,13 +7,24 @@ const GalleryCard = ({ item, onOpen }) => {
       ? `https://img.youtube.com/vi/${item.videoId}/hqdefault.jpg`
       : item.thumbnail || item.image;
 
+  // const handleClick = () => {
+  //   // Open YouTube inside Modal
+  //   if (item.type === "video") {
+  //     onOpen(item);
+  //   }
+
+  //   // Open Facebook & Instagram in New Tab
+  //   if (item.type === "external") {
+  //     window.open(item.url, "_blank", "noopener,noreferrer");
+  //   }
+  // };
+
   const handleClick = () => {
-    // Open YouTube inside Modal
-    if (item.type === "video") {
+    if (item.type === "video" || item.type === "local-video") {
       onOpen(item);
+      return;
     }
 
-    // Open Facebook & Instagram in New Tab
     if (item.type === "external") {
       window.open(item.url, "_blank", "noopener,noreferrer");
     }
@@ -27,22 +38,25 @@ const GalleryCard = ({ item, onOpen }) => {
       className="group cursor-pointer overflow-hidden rounded-3xl border border-white/20 bg-white/10 backdrop-blur-xl shadow-xl transition-all duration-300 hover:border-yellow-400/70 hover:shadow-yellow-500/20"
     >
       {/* Image */}
-      <div className="relative aspect-[4/3] overflow-hidden">
+      {/* Image */}
+      <div className="relative aspect-[4/3] overflow-hidden bg-black/20">
         <img
           src={thumbnail}
           alt={item.title}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+          className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition" />
+        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition" />
 
         {/* Play Button */}
-        {(item.type === "video" || item.type === "external") && (
+        {(item.type === "video" ||
+          item.type === "local-video" ||
+          item.type === "external") && (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-yellow-500/90 backdrop-blur-md shadow-xl transition group-hover:scale-110">
               <>
-                {item.platform === "youtube" && (
+                {(item.platform === "youtube" || item.platform === "local") && (
                   <Play className="fill-black text-black ml-1" size={28} />
                 )}
 
@@ -58,7 +72,6 @@ const GalleryCard = ({ item, onOpen }) => {
           </div>
         )}
       </div>
-
       {/* Content */}
       <div className="p-5">
         <span className="text-xs uppercase tracking-[3px] text-yellow-400">
