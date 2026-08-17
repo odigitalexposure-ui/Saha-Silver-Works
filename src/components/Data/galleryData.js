@@ -31,9 +31,21 @@ const galleryData = [
     thumbnail: "https://img.youtube.com/vi/-EW29rmnVmg/hqdefault.jpg",
   },
 
-  // ================= Facebook =================
   {
     id: 3,
+    type: "video",
+    platform: "youtube",
+
+    title: "SAHA SILVER WORKS Collection",
+    category: "Featured Video",
+
+    videoId: "0qQtS5Lsvuc",
+    thumbnail: "https://youtu.be/0qQtS5Lsvuc?si=0wWZNMLYCLllxW0c",
+  },
+
+  // ================= Facebook =================
+  {
+    id: 4,
     type: "external",
     platform: "facebook",
 
@@ -46,7 +58,7 @@ const galleryData = [
   },
 
   {
-    id: 4,
+    id: 5,
     type: "external",
     platform: "facebook",
 
@@ -59,7 +71,7 @@ const galleryData = [
   },
 
   {
-    id: 5,
+    id: 6,
     type: "external",
     platform: "facebook",
 
@@ -71,9 +83,35 @@ const galleryData = [
     thumbnail: "/gallery/facebook2.jpg",
   },
 
+  {
+    id: 7,
+    type: "external",
+    platform: "facebook",
+
+    title: "Latest Collection",
+    category: "Facebook Video",
+
+    url: "https://www.facebook.com/share/v/14ixjYhdvkr/",
+
+    thumbnail: "/gallery/facebook2.jpg",
+  },
+
+  {
+    id: 7,
+    type: "external",
+    platform: "facebook",
+
+    title: "Latest Collection",
+    category: "Facebook Video",
+
+    url: "https://www.facebook.com/share/v/14ixjYhdvkr/",
+
+    thumbnail: "/gallery/facebook2.jpg",
+  },
+
   // ================= Instagram =================
   {
-    id: 6,
+    id: 8,
     type: "external",
     platform: "instagram",
 
@@ -87,7 +125,7 @@ const galleryData = [
 
   // ================= Local Video =================
   {
-    id: 7,
+    id: 9,
     type: "local-video",
     platform: "local",
 
@@ -100,7 +138,7 @@ const galleryData = [
   },
 
   {
-    id: 8,
+    id: 10,
     type: "local-video",
     platform: "local",
 
@@ -114,7 +152,7 @@ const galleryData = [
 
   // ================= Instagram =================
   {
-    id: 9,
+    id: 11,
     type: "external",
     platform: "instagram",
 
@@ -127,7 +165,7 @@ const galleryData = [
   },
   // ================= Local Video =================
   {
-    id: 10,
+    id: 12,
     // type: "local-video",
     type: "local-image",
     platform: "local",
@@ -141,7 +179,7 @@ const galleryData = [
   },
 
   {
-    id: 11,
+    id: 13,
     // type: "local-video",
     type: "local-image",
     platform: "local",
