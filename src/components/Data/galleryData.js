@@ -96,18 +96,18 @@ const galleryData = [
     thumbnail: "/gallery/facebook2.jpg",
   },
 
-  {
-    id: 7,
-    type: "external",
-    platform: "facebook",
+  // {
+  //   id: 7,
+  //   type: "external",
+  //   platform: "facebook",
 
-    title: "Latest Collection",
-    category: "Facebook Video",
+  //   title: "Latest Collection",
+  //   category: "Facebook Video",
 
-    url: "https://www.facebook.com/share/v/14ixjYhdvkr/",
+  //   url: "https://www.facebook.com/share/v/14ixjYhdvkr/",
 
-    thumbnail: "/gallery/facebook2.jpg",
-  },
+  //   thumbnail: "/gallery/facebook2.jpg",
+  // },
 
   // ================= Instagram =================
   {
